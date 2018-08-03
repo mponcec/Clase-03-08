@@ -1,2 +1,1 @@
-# Clase-03-08
-Evaluación en grupo
+# clase-27-julio

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Episodios</title>
+</head>
+<body>
+<!--Nada más que p5.js para dibujar en el body de esta página-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+    
+var simpsons = {
+primera: 25,
+segunda: 24,
+tercera: 23,
+cuarta: 22,
+quinta: 21
+}
+ 
+
+function setup(){
+  var canvas = createCanvas(windowWidth,500);
+  canvas.position(0,0)
+  noStroke();
+  smooth();
+
+}
+function draw(){
+  background(16,140,250);
+  fill(255)
+     
+    textAlign(CENTER);
+      textSize(simpsons.primera*(windowWidth/240));
+    text(simpsons.primera, ((windowWidth/6)*1), height/2);
+    textSize(11);
+    text('Temporada 6', ((windowWidth/6)*1), height/3+150);
+    text('Temporada 7', ((windowWidth/6)*1), height/3+170);
+    text('Temporada 8', ((windowWidth/6)*1), height/3+190);
+    text('Temporada 9', ((windowWidth/6)*1), height/3+210);
+    
+ 
+    textSize(simpsons.segunda*(windowWidth/260));
+     text(simpsons.segunda, ((windowWidth/6)*2), height/2);
+    textSize(11);
+    text('Temporada 3', ((windowWidth/6)*2), height/3+150);
+    
+    
+     textSize(simpsons.tercera*(windowWidth/280));
+     text(simpsons.tercera, ((windowWidth/6)*3), height/2);
+    textSize(11);
+    text('Temporada 10', ((windowWidth/6)*3), height/3+150);
+    text('Temporada 21', ((windowWidth/6)*3), height/3+170);
+    
+    
+    
+     textSize(simpsons.cuarta*(windowWidth/300));
+     text(simpsons.cuarta, ((windowWidth/6)*4), height/2);
+    textSize(11);
+    text('Temporada  2', ((windowWidth/6)*3.8), height/3+150);
+    text('Temporada  4', ((windowWidth/6)*3.8), height/3+170);
+    text('Temporada  5', ((windowWidth/6)*3.8), height/3+190);
+    text('Temporada 11', ((windowWidth/6)*3.8), height/3+210);
+    text('Temporada 13', ((windowWidth/6)*3.8), height/3+230);
+    text('Temporada 14', ((windowWidth/6)*3.8), height/3+250);
+    text('Temporada 15', ((windowWidth/6)*3.8), height/3+270);
+    text('Temporada 17', ((windowWidth/6)*3.8), height/3+290);
+    text('Temporada 18', ((windowWidth/6)*4.15), height/3+150);
+    text('Temporada 22', ((windowWidth/6)*4.15), height/3+170);
+    text('Temporada 23', ((windowWidth/6)*4.15), height/3+190);
+    text('Temporada 24', ((windowWidth/6)*4.15), height/3+210);
+    text('Temporada 25', ((windowWidth/6)*4.15), height/3+230);
+    text('Temporada 26', ((windowWidth/6)*4.15), height/3+250);
+    text('Temporada 27', ((windowWidth/6)*4.15), height/3+270);
+    text('Temporada 28', ((windowWidth/6)*4.15), height/3+290);
+    
+    
+    
+    
+    textSize(simpsons.quinta*(windowWidth/320));
+     text(simpsons.quinta, ((windowWidth/6)*5), height/2);
+    textSize(11);
+    text('Temporada 12', ((windowWidth/6)*5), height/3+150);
+    text('Temporada 16', ((windowWidth/6)*5), height/3+170);
+    text('Temporada 20', ((windowWidth/6)*5), height/3+190);
+    text('Temporada 29', ((windowWidth/6)*5), height/3+210);
+
+    textSize(15);
+    textStyle(BOLD);
+    text('TEMPORADAS CON MAYOR CANTIDAD DE EPISODIOS', (windowWidth/2), height/10);
+    
+} 
+function windowResized() {
+  resizeCanvas(windowWidth, 500);
+}   
+</script>
+</body>
+</html>
